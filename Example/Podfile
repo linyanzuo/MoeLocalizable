@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MoeLocalizable_Example' do
+  pod 'MoeLocalizable', :path => '../'
+
+  target 'MoeLocalizable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MoeLocalizable
+
+  Created by Zed on 2019/7/10.
+  Copyright © 2019 CocoaPods. All rights reserved.
+*/
+
+"title" = "郵箱註冊";
+"username" = "請輸入用戶名";
+"password" = "請輸入登錄密碼";
+"transaction" = "請輸入交易密碼";
+"email" = "請輸入郵箱";
+"invite_code" = "請輸入邀請碼";
+"next_step" = "下一步";

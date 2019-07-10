@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MoeLocalizable
+
+  Created by Zed on 2019/7/10.
+  Copyright © 2019 CocoaPods. All rights reserved.
+*/
+
+"title" = "Email Register";
+"username" = "Please input user name";
+"password" = "Please enter your password";
+"transaction" = " Please Enter Trading Password";
+"email" = "Please enter your email address";
+"invite_code" = "Please input invite code";
+"next_step" = "Next";

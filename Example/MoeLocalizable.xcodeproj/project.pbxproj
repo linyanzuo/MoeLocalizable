@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		77160EF453FC6EDC25C2D90D /* Pods_MoeLocalizable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 689FEFBEF86B0A7A7B7EC4F2 /* Pods_MoeLocalizable_Tests.framework */; };
+		95BB95E922D59C400018D7EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95EB22D59C400018D7EF /* Localizable.strings */; };
+		95BB95F222D59CB60018D7EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95EE22D59CB60018D7EF /* LaunchScreen.xib */; };
+		95BB95F322D59CB60018D7EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95F022D59CB60018D7EF /* Main.storyboard */; };
+		95BB95F722D59E270018D7EF /* MoeLocalConst+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */; };
 		D35A304308EE3BE53DF341A2 /* Pods_MoeLocalizable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605B76CDF8D9C9B67067C468 /* Pods_MoeLocalizable_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,22 +32,26 @@
 /* Begin PBXFileReference section */
 		06A9ECB84569DC58665D07A8 /* Pods-MoeLocalizable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Example.debug.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Example/Pods-MoeLocalizable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1990B33C858DB3371399374F /* Pods-MoeLocalizable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Example.release.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Example/Pods-MoeLocalizable_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2D4E959613F9FE62670825D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2D4E959613F9FE62670825D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		605B76CDF8D9C9B67067C468 /* Pods_MoeLocalizable_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeLocalizable_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* MoeLocalizable_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoeLocalizable_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* MoeLocalizable_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoeLocalizable_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		689FEFBEF86B0A7A7B7EC4F2 /* Pods_MoeLocalizable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeLocalizable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DD9CCFDA0E535921412E64 /* Pods-MoeLocalizable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Tests/Pods-MoeLocalizable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B612A45145AF12F830A46C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EBD8D265556FBBEE84B6DA57 /* MoeLocalizable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MoeLocalizable.podspec; path = ../MoeLocalizable.podspec; sourceTree = "<group>"; };
+		95BB95EA22D59C400018D7EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		95BB95EC22D59C450018D7EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		95BB95ED22D59C460018D7EF /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		95BB95EF22D59CB60018D7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		95BB95F122D59CB60018D7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95BB95F422D59CDB0018D7EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoeLocalConst+Localizable.swift"; sourceTree = "<group>"; };
+		9B612A45145AF12F830A46C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		EBD8D265556FBBEE84B6DA57 /* MoeLocalizable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MoeLocalizable.podspec; path = ../MoeLocalizable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F1AD0127BB9D1BBD274B8488 /* Pods-MoeLocalizable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Tests.release.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Tests/Pods-MoeLocalizable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,23 +108,16 @@
 		607FACD21AFB9204008FA782 /* Example for MoeLocalizable */ = {
 			isa = PBXGroup;
 			children = (
+				95BB95F422D59CDB0018D7EF /* Info.plist */,
+				95BB95EE22D59CB60018D7EF /* LaunchScreen.xib */,
+				95BB95F022D59CB60018D7EF /* Main.storyboard */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
+				95BB95E622D59C0A0018D7EF /* Support */,
 			);
 			name = "Example for MoeLocalizable";
 			path = MoeLocalizable;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -148,6 +147,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		95BB95E622D59C0A0018D7EF /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */,
+				95BB95EB22D59C400018D7EF /* Localizable.strings */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		C32E2B5D968498284CA00F91 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,7 +164,6 @@
 				80DD9CCFDA0E535921412E64 /* Pods-MoeLocalizable_Tests.debug.xcconfig */,
 				F1AD0127BB9D1BBD274B8488 /* Pods-MoeLocalizable_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +179,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				36A19AE6021DBEE33E3014BE /* [CP] Embed Pods Frameworks */,
+				95BB95E122D599CC0018D7EF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -208,7 +216,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -227,8 +235,11 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
+				"zh-Hans",
+				"zh-HK",
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -246,9 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				95BB95E922D59C400018D7EF /* Localizable.strings in Resources */,
+				95BB95F222D59CB60018D7EF /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				95BB95F322D59CB60018D7EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +314,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoeLocalizable_Example/Pods-MoeLocalizable_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		95BB95E122D599CC0018D7EF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/zed/GitLab/MoeRepos/MoeLocalizable/Classes/demo.sh\n";
+		};
 		982EDF0F14EF08692E267C51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -332,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				95BB95F722D59E270018D7EF /* MoeLocalConst+Localizable.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,20 +385,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
+		95BB95EB22D59C400018D7EF /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				95BB95EA22D59C400018D7EF /* en */,
+				95BB95EC22D59C450018D7EF /* zh-Hans */,
+				95BB95ED22D59C460018D7EF /* zh-HK */,
 			);
-			name = Main.storyboard;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		95BB95EE22D59CB60018D7EF /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				95BB95EF22D59CB60018D7EF /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		95BB95F022D59CB60018D7EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95BB95F122D59CB60018D7EF /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -378,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -386,12 +427,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -431,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -439,12 +483,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

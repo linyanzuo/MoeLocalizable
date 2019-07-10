@@ -1,0 +1,6 @@
+framework module MoeLocalizable {
+  umbrella header "MoeLocalizable-umbrella.h"
+
+  export *
+  module * { export * }
+}

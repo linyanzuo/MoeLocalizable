@@ -17,6 +17,7 @@
 		95BB95D322D58E540018D7EF /* LocalRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB95D222D58E540018D7EF /* LocalRegister.swift */; };
 		95BB95D522D58ECA0018D7EF /* MoeLocalConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB95D422D58ECA0018D7EF /* MoeLocalConst.swift */; };
 		95BB95D722D595010018D7EF /* demo.sh in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95D622D595010018D7EF /* demo.sh */; };
+		95BB962D22D77A840018D7EF /* LocalConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB962C22D77A840018D7EF /* LocalConfig.swift */; };
 		970851FBBEC5F27374E09258C1C2B536 /* MoeLocalizable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4700EB7936C9B5DF3724F8018D9DEBF6 /* MoeLocalizable-dummy.m */; };
 		A249E335E90323392641E3873F74D6BC /* Pods-MoeLocalizable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6931ED43B80743342762D7DD668C8919 /* Pods-MoeLocalizable_Tests-dummy.m */; };
 		C0F29EB901C0609CA473332671BEBF50 /* Pods-MoeLocalizable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDBBDC54445E7F2814FD64744EA3270 /* Pods-MoeLocalizable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +61,7 @@
 		95BB95D222D58E540018D7EF /* LocalRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalRegister.swift; sourceTree = "<group>"; };
 		95BB95D422D58ECA0018D7EF /* MoeLocalConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeLocalConst.swift; sourceTree = "<group>"; };
 		95BB95D622D595010018D7EF /* demo.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = demo.sh; sourceTree = "<group>"; };
+		95BB962C22D77A840018D7EF /* LocalConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConfig.swift; sourceTree = "<group>"; };
 		979174D8739D75982DDB8018E0D1EB56 /* Pods-MoeLocalizable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MoeLocalizable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A04CF6B5C44B23A9F722F1DAB1035A91 /* Pods-MoeLocalizable_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MoeLocalizable_Example-dummy.m"; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				95BB95D022D58E200018D7EF /* LocalConst.swift */,
 				95BB95D222D58E540018D7EF /* LocalRegister.swift */,
 				95BB95D422D58ECA0018D7EF /* MoeLocalConst.swift */,
+				95BB962C22D77A840018D7EF /* LocalConfig.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				95BB95D522D58ECA0018D7EF /* MoeLocalConst.swift in Sources */,
 				95BB95CF22D58DDA0018D7EF /* Runtime.swift in Sources */,
 				970851FBBEC5F27374E09258C1C2B536 /* MoeLocalizable-dummy.m in Sources */,
+				95BB962D22D77A840018D7EF /* LocalConfig.swift in Sources */,
 				95BB95D322D58E540018D7EF /* LocalRegister.swift in Sources */,
 				95BB95D122D58E200018D7EF /* LocalConst.swift in Sources */,
 			);

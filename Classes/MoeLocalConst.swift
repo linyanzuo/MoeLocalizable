@@ -26,7 +26,8 @@
     }()
     
     public func localized(_ key: String, _ comment: String) -> String {
-        return NSLocalizedString(key, tableName: MoeLocalConst.table, comment: comment)
+        let bundle = LocalConfig.userLanguage()
+        return NSLocalizedString(key, tableName: MoeLocalConst.table, bundle: bundle, value: "", comment: comment)
     }
 }
 

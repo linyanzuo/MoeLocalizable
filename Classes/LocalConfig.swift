@@ -49,13 +49,12 @@ enum LocalLanguage: String {
         UserDefaults.standard.synchronize()
     }
     
-    static func languageBundle() -> Bundle? {
-        guard
-            userLanguage()?.count ?? 0 <= 0,
-            let path = Bundle.main.path(forResource: userLanguage(), ofType: "lproj")
-            else {
-                return Bundle.main
+    static func languageBundle() -> Bundle {
+        if userLanguage()?.count ?? 0 > 0 {
+            if let path = Bundle.main.path(forResource: userLanguage(), ofType: "lproj") {
+                return Bundle(path: path)!
+            }
         }
-        return Bundle(path: path)
+        return Bundle.main
     }
 }

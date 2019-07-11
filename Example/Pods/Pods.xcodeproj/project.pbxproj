@@ -164,9 +164,9 @@
 				95BB95D622D595010018D7EF /* demo.sh */,
 				95BB95CE22D58DDA0018D7EF /* Runtime.swift */,
 				95BB95D022D58E200018D7EF /* LocalConst.swift */,
+				95BB962C22D77A840018D7EF /* LocalConfig.swift */,
 				95BB95D222D58E540018D7EF /* LocalRegister.swift */,
 				95BB95D422D58ECA0018D7EF /* MoeLocalConst.swift */,
-				95BB962C22D77A840018D7EF /* LocalConfig.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

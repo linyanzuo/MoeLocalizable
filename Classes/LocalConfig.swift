@@ -22,7 +22,7 @@ enum LocalLanguage: String {
     /// Set user language
     ///
     /// - Parameter language: language name, use system language if nil
-    static func setUserLanguage(_ language: String?) {
+    public static func setUserLanguage(_ language: String?) {
         guard language?.count ?? 0 > 0 else {
             self.resetSystemLanguage()
             return
@@ -38,18 +38,18 @@ enum LocalLanguage: String {
     /// get current user language
     ///
     /// - Returns: description of current user language
-    static func userLanguage() -> String? {
+    public static func userLanguage() -> String? {
         return UserDefaults.standard.value(forKey: UserLanguageKey) as? String
     }
     
     /// Reset user language as System Language
-    static func resetSystemLanguage() {
+    public static func resetSystemLanguage() {
         UserDefaults.standard.removeObject(forKey: UserLanguageKey)
         UserDefaults.standard.setValue(nil, forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
     }
     
-    static func languageBundle() -> Bundle {
+    public static func languageBundle() -> Bundle {
         if userLanguage()?.count ?? 0 > 0 {
             if let path = Bundle.main.path(forResource: userLanguage(), ofType: "lproj") {
                 return Bundle(path: path)!

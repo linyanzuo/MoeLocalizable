@@ -30,7 +30,13 @@ extension String: LocalRegister, LocalConst, Runtime {
             let value = localconst.value(forKey: key) as? String {
             return value
         }
-        return Bundle.main.localizedString(forKey: key, value: self, table: MoeLocalConst.table)
+        
+        let localizedDefault = "localconst.localized.default"
+        var localizedString = LocalConfig.languageBundle().localizedString(forKey: key, value: localizedDefault, table: MoeLocalConst.table)
+        if localizedString == localizedDefault {
+            localizedString = LocalConfig.languageBundle().localizedString(forKey: self, value: localizedDefault, table: MoeLocalConst.table)
+        }
+        return localizedString
     }
     
     func subString(start:Int, length:Int = -1) -> String {

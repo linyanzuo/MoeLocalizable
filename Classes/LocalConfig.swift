@@ -9,9 +9,16 @@ import UIKit
 
 
 enum LocalLanguage: String {
+    /// 简体中文
     case chineseSimplified = "zh-Hans"
+    /// 繁体中文
     case chineseTraditional = "zh-Hant"
+    /// 英文
     case english = "en"
+    /// 韩文
+    case korean = "ko"
+    /// 日文
+    case japanese = "ja"
 }
 
 
@@ -31,8 +38,6 @@ enum LocalLanguage: String {
         UserDefaults.standard.setValue(language, forKey: UserLanguageKey)
         UserDefaults.standard.setValue([language], forKey: "AppleLanguages")
         UserDefaults.standard.synchronize()
-        
-        print("hello word")
     }
     
     /// get current user language

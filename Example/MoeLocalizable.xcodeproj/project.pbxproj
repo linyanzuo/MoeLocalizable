@@ -15,7 +15,7 @@
 		95BB95E922D59C400018D7EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95EB22D59C400018D7EF /* Localizable.strings */; };
 		95BB95F222D59CB60018D7EF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95EE22D59CB60018D7EF /* LaunchScreen.xib */; };
 		95BB95F322D59CB60018D7EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95BB95F022D59CB60018D7EF /* Main.storyboard */; };
-		95BB95F722D59E270018D7EF /* MoeLocalConst+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */; };
+		95E64023238638FB00745E2F /* LocalString+Var.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E64022238638FB00745E2F /* LocalString+Var.swift */; };
 		D35A304308EE3BE53DF341A2 /* Pods_MoeLocalizable_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 605B76CDF8D9C9B67067C468 /* Pods_MoeLocalizable_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,11 +45,11 @@
 		80DD9CCFDA0E535921412E64 /* Pods-MoeLocalizable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Tests/Pods-MoeLocalizable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		95BB95EA22D59C400018D7EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		95BB95EC22D59C450018D7EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		95BB95ED22D59C460018D7EF /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		95BB95EF22D59CB60018D7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		95BB95F122D59CB60018D7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95BB95F422D59CDB0018D7EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MoeLocalConst+Localizable.swift"; sourceTree = "<group>"; };
+		95E6401E238554B700745E2F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		95E64022238638FB00745E2F /* LocalString+Var.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalString+Var.swift"; sourceTree = "<group>"; };
 		9B612A45145AF12F830A46C7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EBD8D265556FBBEE84B6DA57 /* MoeLocalizable.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MoeLocalizable.podspec; path = ../MoeLocalizable.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F1AD0127BB9D1BBD274B8488 /* Pods-MoeLocalizable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeLocalizable_Tests.release.xcconfig"; path = "Target Support Files/Pods-MoeLocalizable_Tests/Pods-MoeLocalizable_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,7 @@
 		95BB95E622D59C0A0018D7EF /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				95BB95F622D59E270018D7EF /* MoeLocalConst+Localizable.swift */,
+				95E64022238638FB00745E2F /* LocalString+Var.swift */,
 				95BB95EB22D59C400018D7EF /* Localizable.strings */,
 			);
 			path = Support;
@@ -239,7 +239,7 @@
 				en,
 				Base,
 				"zh-Hans",
-				"zh-HK",
+				"zh-Hant",
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MoeLocalizable_Example/Pods-MoeLocalizable_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MoeCommon/MoeCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/MoeLocalizable/MoeLocalizable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoeCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoeLocalizable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/zed/GitLab/MoeRepos/MoeLocalizable/Classes/demo.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/zed/GitHub/MoeLocalizable/Classes/LocalConst.sh\n";
 		};
 		982EDF0F14EF08692E267C51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -361,8 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				95BB95F722D59E270018D7EF /* MoeLocalConst+Localizable.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				95E64023238638FB00745E2F /* LocalString+Var.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +392,7 @@
 			children = (
 				95BB95EA22D59C400018D7EF /* en */,
 				95BB95EC22D59C450018D7EF /* zh-Hans */,
-				95BB95ED22D59C460018D7EF /* zh-HK */,
+				95E6401E238554B700745E2F /* zh-Hant */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

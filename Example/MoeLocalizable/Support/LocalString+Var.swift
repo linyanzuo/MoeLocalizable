@@ -1,5 +1,5 @@
 //
-//  MoeLocalConst+Var.swift
+//  LocalString+Var.swift
 //  Copyright © 2019 MoeLocalizable. All rights reserved.
 //
 //  Automatically generate By MoeLocalizable
@@ -7,7 +7,7 @@
 import MoeLocalizable
 
 
-extension MoeLocalConst {
+extension LocalString {
     // MARK: Automatically generated const from `zh-Hans.lproj/Localizable.strings`
 
     /// 邮箱注册
@@ -24,5 +24,7 @@ extension MoeLocalConst {
     var invite_code: String { get { return localized("invite_code", "请输入邀请码") } }
     /// 下一步
     var next_step: String { get { return localized("next_step", "下一步") } }
+    /// 大傻逼啊
+    var hello_world: String { get { return localized("hello_world", "大傻逼啊") } }
 
 }

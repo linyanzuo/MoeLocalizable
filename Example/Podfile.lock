@@ -1,16 +1,28 @@
 PODS:
-  - MoeLocalizable (0.1.0)
+  - MoeCommon (0.1.1):
+    - MoeCommon/Base (= 0.1.1)
+    - MoeCommon/Runtime (= 0.1.1)
+  - MoeCommon/Base (0.1.1)
+  - MoeCommon/Runtime (0.1.1):
+    - MoeCommon/Base
+  - MoeLocalizable (0.1.2):
+    - MoeCommon (~> 0.1.1)
 
 DEPENDENCIES:
   - MoeLocalizable (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MoeCommon
 
 EXTERNAL SOURCES:
   MoeLocalizable:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MoeLocalizable: 929d7cba6f124d312287b5b9e325c89be3d678cc
+  MoeCommon: 1f488495154f7b33c38c0e448742c051f8d4e433
+  MoeLocalizable: 28188adb8df7bd0fd26e76db97fbd414c579620e
 
 PODFILE CHECKSUM: 919e1edc4836b2ed83a39f30b81a91c29219119c
 
-COCOAPODS: 1.7.3
+COCOAPODS: 1.7.4

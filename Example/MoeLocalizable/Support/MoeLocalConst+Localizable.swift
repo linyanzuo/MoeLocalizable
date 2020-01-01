@@ -7,7 +7,7 @@
 import MoeLocalizable
 
 
-extension MoeLocalConst {
+extension LocalString {
     // MARK: Automatically generated const from `zh-Hans.lproj/Localizable.strings`
 
     /// 邮箱注册

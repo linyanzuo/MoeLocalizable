@@ -10,8 +10,6 @@ import UIKit
 import MoeLocalizable
 
 
-extension NSObject: LocalConst {
-}
 class ViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -21,6 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var emailLabel: UITextField!
     @IBOutlet weak var inviteLabel: UITextField!
     @IBOutlet weak var nextBtn: UIButton!
+    
+    var localconst = LocalString.share
+    var moe = LocalString.share
     
     override func viewDidLoad() {
         super.viewDidLoad()

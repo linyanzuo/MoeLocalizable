@@ -303,10 +303,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MoeLocalizable_Example/Pods-MoeLocalizable_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MoeCommon/MoeCommon.framework",
 				"${BUILT_PRODUCTS_DIR}/MoeLocalizable/MoeLocalizable.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoeCommon.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MoeLocalizable.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +331,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/Users/zed/GitLab/MoeRepos/MoeLocalizable/Classes/demo.sh\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\n";
 		};
 		982EDF0F14EF08692E267C51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

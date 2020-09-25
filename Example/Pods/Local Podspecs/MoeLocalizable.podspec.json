@@ -19,7 +19,7 @@
     "ios": "9.0"
   },
   "swift_versions": "5.0",
-  "source_files": "Classes/*",
+  "source_files": "MoeLocalizable/Classes/*",
   "dependencies": {
     "MoeCommon": [
       "~> 0.1.2"

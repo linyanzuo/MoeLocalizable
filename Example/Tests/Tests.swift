@@ -4,24 +4,22 @@ import MoeLocalizable
 class Tests: XCTestCase {
     
     override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        // 在此书写初始代码. 本类的所有测试方法执行之前都会执行本方法
     }
-    
+
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+        // 在此书写结束代码. 本类的所有测试方法执行之后都会执行本方法
     }
-    
+
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
+        // 这是函数测试案例
+        // 使用`XCTAssert`及相关函数来核验测试是否能产出正确结果
     }
-    
+
     func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure() {
-            // Put the code you want to measure the time of here.
+        // 这是性能测试案例
+        self.measure {
+            // 在些书写你想测量运行时间的代码
         }
     }
     

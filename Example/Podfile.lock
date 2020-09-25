@@ -12,7 +12,7 @@ DEPENDENCIES:
   - MoeLocalizable (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - MoeCommon
 
 EXTERNAL SOURCES:
@@ -21,8 +21,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   MoeCommon: a5c02520c16045129d791c0b6e38d737cb41b648
-  MoeLocalizable: 7ba6ee144f85161596363377a8b5248b9059aeb8
+  MoeLocalizable: a04171aac9de801edb1006ab29215c6925f88473
 
 PODFILE CHECKSUM: 919e1edc4836b2ed83a39f30b81a91c29219119c
 
-COCOAPODS: 1.7.4
+COCOAPODS: 1.9.3

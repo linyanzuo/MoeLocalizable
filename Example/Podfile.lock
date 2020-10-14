@@ -1,28 +1,35 @@
 PODS:
   - MoeCommon (0.1.2):
     - MoeCommon/Base (= 0.1.2)
+    - MoeCommon/Extension (= 0.1.2)
     - MoeCommon/Runtime (= 0.1.2)
   - MoeCommon/Base (0.1.2)
+  - MoeCommon/Extension (0.1.2)
   - MoeCommon/Runtime (0.1.2):
     - MoeCommon/Base
+    - MoeCommon/Extension
   - MoeLocalizable (0.1.3):
-    - MoeCommon (~> 0.1.2)
-
-DEPENDENCIES:
-  - MoeLocalizable (from `../`)
-
-SPEC REPOS:
-  trunk:
     - MoeCommon
 
+DEPENDENCIES:
+  - MoeCommon (from `https://github.com/linyanzuo/MoeCommon.git`)
+  - MoeLocalizable (from `../`)
+
 EXTERNAL SOURCES:
+  MoeCommon:
+    :git: https://github.com/linyanzuo/MoeCommon.git
   MoeLocalizable:
     :path: "../"
 
-SPEC CHECKSUMS:
-  MoeCommon: a5c02520c16045129d791c0b6e38d737cb41b648
-  MoeLocalizable: a04171aac9de801edb1006ab29215c6925f88473
+CHECKOUT OPTIONS:
+  MoeCommon:
+    :commit: 915783bdb10ef97315a1dafdff7d8bd974ada9c5
+    :git: https://github.com/linyanzuo/MoeCommon.git
 
-PODFILE CHECKSUM: 919e1edc4836b2ed83a39f30b81a91c29219119c
+SPEC CHECKSUMS:
+  MoeCommon: 58429fce47df711e46147d7d34c07648459012ef
+  MoeLocalizable: bb11a9967b9d7680ece227348c1857562c6b26ac
+
+PODFILE CHECKSUM: 6f845fb481b0b0f3a21d33c4d30f90cc3b2a34c6
 
 COCOAPODS: 1.9.3

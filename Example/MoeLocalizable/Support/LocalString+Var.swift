@@ -26,5 +26,4 @@ extension LocalString {
     var next_step: String { get { return localized("next_step", "下一步") } }
     /// 大傻逼啊
     var hello_world: String { get { return localized("hello_world", "大傻逼啊") } }
-
 }

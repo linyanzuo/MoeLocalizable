@@ -9,7 +9,7 @@ import UIKit
 import MoeCommon
 
 
-/// 本地化语言，项目添加本地化语言时，请勾选相应的类型，否则无法加载相应包的语言文件
+/// 本地化语言，项目添加本地化语言时，请勾选相应的类型，否则无法加载到相应包的语言文件
 public enum LocalLanguage: String {
     /// 简体中文，本地化勾选时请选择“zh-Hans”
     case chineseSimplified = "zh-Hans"
@@ -26,11 +26,10 @@ public enum LocalLanguage: String {
 
 extension Notification.Name {
     public struct Localizable {
-        /// 本地化语言修改时，发出该通知。
-        ///
+        /// 本地化语言修改时发出的通知；
         /// `userInfo`中携带键为`Language`的参数，其值为当前的本地化语言(`LocalLanguage`类型)
         public static let LanguageChange = Notification.Name(rawValue:
-            "org.moe.localizable.notificatoin.name.localizable.languageChange")
+            "com.moemone.localizable.notificatoin.name.localizable.languageChange")
     }
 }
 
@@ -67,11 +66,12 @@ public class LocalConfig {
             LanguageKey.apple.rawValue : [language.rawValue]
         ])
         
-        
         languageDidChange?(language)
-        NotificationCenter.default.post(name: Notification.Name.Localizable.LanguageChange,
-                                        object: self,
-                                        userInfo: ["Language" : language])
+        NotificationCenter.default.post(
+            name: Notification.Name.Localizable.LanguageChange,
+            object: self,
+            userInfo: ["Language" : language]
+        )
     }
     
     /// 返回当前的本地化语言，若是未配置或不支持的语言则返回nil
@@ -93,10 +93,7 @@ public class LocalConfig {
     /// 若是未配置本地化语言、不支持的语言、或找不到匹配的包，则返回nil
     public func languageBundle() -> Bundle? {
         guard let language = localLanguage() else { return nil }
-        
-        guard let path = Bundle.main.path(forResource: language.rawValue, ofType: "lproj") else
-        { return nil }
-        
+        guard let path = Bundle.main.path(forResource: language.rawValue, ofType: "lproj") else { return nil }
         guard let bundle = Bundle(path: path) else { return nil }
         return bundle
     }

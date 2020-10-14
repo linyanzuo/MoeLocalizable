@@ -22,7 +22,7 @@
   "source_files": "MoeLocalizable/Classes/*",
   "dependencies": {
     "MoeCommon": [
-      "~> 0.1.2"
+
     ]
   },
   "swift_version": "5.0"

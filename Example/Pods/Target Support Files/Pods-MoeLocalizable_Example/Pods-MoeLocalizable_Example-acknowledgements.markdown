@@ -26,7 +26,7 @@ THE SOFTWARE.
 
 ## MoeLocalizable
 
-Copyright (c) 2019 linyanzuo1222@gmail.com <zed@moemoetech.com>
+Copyright (c) 2019 linyanzuo1222@gmail.com <zed@moemone.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

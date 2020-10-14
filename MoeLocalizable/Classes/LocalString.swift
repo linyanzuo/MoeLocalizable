@@ -20,7 +20,7 @@
 
 // `本地化文本`，负责获取本地化文本
 public class LocalString {
-    static let share = LocalString()
+    public static let share = LocalString()
     private init() {}
     
     /// 返回指定键对应的本地化文本，若加载失败则返回默认值。

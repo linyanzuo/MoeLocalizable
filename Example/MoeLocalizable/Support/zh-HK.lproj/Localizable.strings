@@ -6,4 +6,11 @@
   Copyright © 2019 CocoaPods. All rights reserved.
 */
 
-
+"title" = "邮箱注册";
+"username" = "请输入用户名";
+"password" = "请输入登录密码";
+"transaction" = "请输入交易密码";
+"email" = "请输入邮箱";
+"invite_code" = "请输入邀请码";
+"next_step" = "下一步";
+"hello_world" = "大傻逼啊";

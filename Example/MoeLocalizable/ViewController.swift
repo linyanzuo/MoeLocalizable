@@ -12,7 +12,6 @@ import MoeCommon
 
 
 class ViewController: UIViewController {
-    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var usernameLabel: UITextField!
     @IBOutlet weak var pwdLabel: UITextField!
@@ -47,17 +46,7 @@ class ViewController: UIViewController {
 //        NotificationCenter.default.addObserver(self, selector: #selector(localLanguageDidChange), name: Notification.Name.Localizable.LanguageChange, object: nil)
     }
     
-    @objc func localLanguageDidChange(noti: Notification) {
-        let language = noti.userInfo!["Language"] as? LocalLanguage
-        MLog(language?.rawValue)
-        test3()
-    }
-    
-    @objc func changeLanguage() {
-        LocalConfig.shared.setLocalLanguage(.english)
-    }
-    
-    /// 通过表名加载本地化文本的原生实现
+    /// 通过表名加载本地化文本的原生代码实现
     private func test() {
         /**
          key: 本地化值的key, 如果找不到table, 则将key值作为文本
@@ -133,6 +122,20 @@ class ViewController: UIViewController {
         emailLabel.placeholder = local.localized("email")
         inviteLabel.placeholder = local.localized("invite_code", "Hello world")
         nextBtn.setTitle(local.localized("next_step"), for: .normal)
+    }
+}
+
+
+// MARK: - 响应事件
+@objc extension ViewController {
+    @objc func localLanguageDidChange(noti: Notification) {
+        let language = noti.userInfo!["Language"] as? LocalLanguage
+        MLog(language?.rawValue)
+        test3()
+    }
+    
+    @objc func changeLanguage() {
+        LocalConfig.shared.setLocalLanguage(.english)
     }
 }
 
